@@ -1,0 +1,6 @@
+"Acinetobacter.01","Acinetobacter.02","Actinomyces.01","Actinomyces.02","Alicyclobacillus.01"
+"Acinetobacter.01",1,0,0,0,0.890595495700836
+"Acinetobacter.02",0,1,0,0.54375547170639,0
+"Actinomyces.01",0,0,1,0.704626202583313,0
+"Actinomyces.02",0,0.54375547170639,0.704626202583313,1,0
+"Alicyclobacillus.01",0.890595495700836,0,0,0,1

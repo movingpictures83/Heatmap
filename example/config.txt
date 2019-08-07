@@ -1,0 +1,2 @@
+Prefix plugins/Heatmap/example/
+Plugin Heatmap inputfile corrTestA.csv outputfile heatmap
