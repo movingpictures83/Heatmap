@@ -1,8 +1,9 @@
-# BoxPlot
+# Heatmap
 # Language: R
 # Input: CSV
 # Output: Prefix 
-# Tested with: PluMA 1.0, R 3.2.5
+# Tested with: PluMA 1.1, R 4.0.0
+# Dependency: gplots_3.0.3
 
 PluMA plugin to take a CSV file and produce a heatmap of its values. 
 The CSV file is assumed to include row and column headers.
