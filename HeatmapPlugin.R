@@ -27,8 +27,8 @@ file <- name;
 colores <- rainbow(ncol(M))
 
 pdf(file,                # create PNG for the heat map        
-  width = 10*300,        # 5 x 300 pixels
-  height = 10*300);#,
+  width = 5*5,        # 5 x 300 pixels
+  height = 5*5);#,
   #res = 300,            # 300 pixels per inch
   #pointsize = 6)        # smaller font size
 
@@ -38,10 +38,13 @@ h <- heatmap.2(M,
   notecol="black",      # change font color of cell labels to black
   density.info="none",  # turns off density plot inside color legend
   trace="none",         # turns on trace lines inside the heat map
-  margins =c(15,15),    # widens margins around plot
+  margins =c(30,30),    # widens margins around plot
   col=my_palette,       # use on color palette defined earlier 
   breaks=col_breaks,    # enable color transition at specified limits
   keysize=0.5,
+  cexCol=2,
+  labRow = colnames(M),
+  cexRow=2,
   #ColSideColors = colores,
   #RowSideColors = colores,
   dendrogram="none",    # no dendograms
@@ -86,12 +89,13 @@ colores <- colorList
 svg(file, width = 30, height = 30)
 
 heatmap.2(M, 
-  #cellnote = mat_data,  # same data set for cell labels
+  cellnote = mat_data,  # same data set for cell labels
+  
   main = "Correlation", # heat map title
   notecol="black",      # change font color of cell labels to black
   density.info="none",  # turns off density plot inside color legend
   trace="none",         # turns on trace lines inside the heat map
-  margins =c(15,15),    # widens margins around plot
+  margins =c(30,30),    # widens margins around plot
   col=my_palette,       # use on color palette defined earlier 
   breaks=col_breaks,    # enable color transition at specified limits
   keysize=0.5,
